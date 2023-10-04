@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Pacifico&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Pacifico&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      #check:checked ~ #sidebar {
+        left: 0px;
+        transition-duration: 500ms;
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 bg-black">
+    <!-- this checkbox is to set the state of the sidebar -->
+    <input type="checkbox" id="check" class="hidden text-5xl" checked />
+
+    <label for="check" class="text-white md:hidden">
+      <i
+        class="ri-menu-2-line text-4xl font-bold absolute top-2 left-2 duration-300 hover:duration-300 hover:bg-white hover:text-black rounded-2xl p-2 z-50"
+      ></i>
+    </label>
+
+    <!-- this is the sidebar and its content -->
+    <div
+      id="sidebar"
+      class="md:hidden flex-col w-[300px] h-screen bg-white/30 border-2 rounded-tr-3xl rounded-br-3xl absolute -left-[400px] duration-500"
+    >
+      <div class="w-full h-[200px] flex justify-center items-center">
+        <span class="text-white text-5xl font-bold" style="font-family: cursive"
+          >PortFolio</span
+        >
+      </div>
+
+      <div class="w-full h-full">
+        <ul class="text-white flex-col text-2xl">
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Home
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Projects
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Services
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Resume
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Testimonials
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Blogs
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Socials
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="w-full h-[70px] px-10 hover:border hover:bg-white/30 flex justify-start items-center"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- this is the navbar that would only be displayed on the screens of laptop and computer and tablets -->
+    <nav class="hidden md:contents w-full h-[100px] px-10 items-center">
+      <div class="h-[100px] flex justify-center items-center">
+        <ul class="text-white flex space-x-10 text-2xl">
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Home
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Projects
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Services
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Resume
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Testimonials
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Blogs
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Socials
+          </li>
+          <li
+            style="font-family: 'Poppins'"
+            class="duration-500 hover:underline underline-offset-[12px] hover:duration-500"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- this is the banner of the page the home section of the navbar means this -->
+    <div id="banner" class="w-full h-a bg-white">
+
+    </div>
+  </body>
+</html>
